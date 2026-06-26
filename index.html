@@ -1,0 +1,972 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    l"
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Shaiyma Parveen - Flutter Developer Portfolio. Mobile App Developer with 1.5+ years of experience." />
+    <meta name="keywords" content="Flutter Developer, Mobile App, Android Developer, Dart, Firebase" />
+    <meta name="author" content="Shaiyma Parveen" />
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Shaiyma Parveen | Flutter Developer" />
+    <meta property="og:description" content="Flutter Developer with 1.5+ years of experience building Android applications." />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://images.unsplash.com/photo-1576153192396-180ecef2a715?w=1200&h=630&fit=crop" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%236C63F9'/%3E%3Ctext x='50' y='68' font-size='52' font-family='Arial' text-anchor='middle' fill='white' font-weight='bold'%3EF%3C/text%3E%3C/svg%3E" />
+
+    <title>Shaiyma Parveen | Flutter Developer Portfolio</title>
+
+    <!-- Google Fonts: Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+
+    <!-- Bootstrap 5.3 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./style.css" />
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <!-- Swiper.js CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <!-- Custom CSS -->
+    link 
+</head>
+<body>
+
+    <!-- ============================================================
+    LOADER
+    ============================================================ -->
+    <div id="preloader">
+        <div class="loader-ring"></div>
+        <div class="loader-text">Loading...</div>
+    </div>
+
+    <!-- ============================================================
+    SCROLL PROGRESS BAR
+    ============================================================ -->
+    <div id="scroll-progress"></div>
+
+    <!-- ============================================================
+    BACK TO TOP BUTTON
+    ============================================================ -->
+    <button id="back-to-top" aria-label="Back to top">
+        <i class="bi bi-chevron-up"></i>
+    </button>
+
+    <!-- ============================================================
+    CURSOR GLOW
+    ============================================================ -->
+    <div id="cursor-glow"></div>
+
+    <!-- ============================================================
+    NAVBAR
+    ============================================================ -->
+    <nav id="main-navbar" class="navbar navbar-expand-lg fixed-top glass-nav">
+        <div class="container">
+            <a class="navbar-brand fw-800 text-primary" href="#home">
+                <span class="logo-text">SP</span>
+                <span class="logo-full d-none d-sm-inline">Shaiyma</span>
+            </a>
+
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="bi bi-list fs-2 text-dark dark:text-white"></i>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navMenu">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 gap-1">
+                    <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+                    <!-- <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li> -->
+                    <!-- <li class="nav-item"><a class="nav-link" href="#achievements">Achievements</a></li> -->
+                    <!-- <li class="nav-item"><a class="nav-link" href="#testimonials">Testimonials</a></li> -->
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+                <div class="d-flex align-items-center gap-2 ms-lg-3">
+                    <button id="darkModeToggle" class="btn btn-outline-primary rounded-circle p-2 d-flex align-items-center justify-content-center" style="width:40px;height:40px;" aria-label="Toggle dark mode">
+                        <i class="bi bi-moon-fill dark-icon"></i>
+                        <i class="bi bi-sun-fill light-icon d-none"></i>
+                    </button>
+                    <a href="assets/resume.pdf" download class="btn btn-primary rounded-pill px-4 d-none d-md-inline-flex">
+                        <i class="bi bi-download me-2"></i>Resume
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ============================================================
+    HERO SECTION
+    ============================================================ -->
+    <section id="home" class="hero-section min-vh-100 d-flex align-items-center position-relative overflow-hidden">
+        <!-- Animated Background -->
+        <div class="hero-bg-animation"></div>
+
+        <!-- Floating Elements -->
+        <div class="floating-icon icon-1"><i class="bi bi-phone"></i></div>
+        <div class="floating-icon icon-2"><i class="bi bi-android2"></i></div>
+        <div class="floating-icon icon-3"><i class="bi bi-code-square"></i></div>
+        <div class="floating-icon icon-4"><i class="bi bi-apple"></i></div>
+        <div class="floating-icon icon-5"><i class="bi bi-database"></i></div>
+
+        <div class="container position-relative z-1">
+            <div class="row align-items-center min-vh-100 py-5">
+                <!-- Left Content -->
+                <div class="col-lg-7" data-aos="fade-up" data-aos-duration="1000">
+                    <div class="hero-content">
+                        <span class="badge bg-primary bg-opacity-10 text-primary rounded-pill px-4 py-2 mb-3 fs-6 fw-600">
+                            <i class="bi bi-hand-index-thumb me-2"></i>Welcome to my portfolio
+                        </span>
+                        <h1 class="display-2 fw-800 text-dark dark:text-white mb-2">
+                            I'm <span class="text-primary">Shaiyma</span>
+                        </h1>
+                        <h2 class="display-6 fw-600 text-muted mb-3">
+                            <span id="typed-text"></span>
+                        </h2>
+                        <p class="lead text-muted mb-4 max-w-600">
+                            Flutter Developer with 1.5+ years of experience crafting high-performance Android applications with pixel-perfect UI and seamless user experiences.
+                        </p>
+                        <div class="d-flex flex-wrap gap-3 mb-4">
+                            <a href="#contact" class="btn btn-primary btn-lg rounded-pill px-5">
+                                <i class="bi bi-send me-2"></i>Hire Me
+                            </a>
+                            <a href="#portfolio" class="btn btn-outline-primary btn-lg rounded-pill px-5">
+                                <i class="bi bi-eye me-2"></i>View Work
+                            </a>
+                        </div>
+                        <div class="social-icons d-flex gap-3">
+                            <a href="#" class="btn btn-outline-primary rounded-circle p-3" aria-label="GitHub"><i class="bi bi-github fs-5"></i></a>
+                            <a href="#" class="btn btn-outline-primary rounded-circle p-3" aria-label="LinkedIn"><i class="bi bi-linkedin fs-5"></i></a>
+                            <a href="#" class="btn btn-outline-primary rounded-circle p-3" aria-label="Twitter"><i class="bi bi-twitter-x fs-5"></i></a>
+                            <a href="#" class="btn btn-outline-primary rounded-circle p-3" aria-label="YouTube"><i class="bi bi-youtube fs-5"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Image -->
+                <div class="col-lg-5 text-center mt-5 mt-lg-0" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="200">
+                    <div class="hero-image-wrapper position-relative">
+                        <div class="hero-image-glow"></div>
+                        <img src="./img/shaiyma-img.jpg" alt="Shaiyma Parveen" class="img-fluid rounded-4 shadow-lg" style="max-width:380px;width:100%;" loading="lazy" />
+                        <!-- Floating tech badges -->
+                        <div class="tech-badge badge-1">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flutter/flutter-original.svg" alt="Flutter" width="32" height="32" />
+                        </div>
+                        <div class="tech-badge badge-2">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dart/dart-original.svg" alt="Dart" width="32" height="32" />
+                        </div>
+                        <div class="tech-badge badge-3">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/android/android-original.svg" alt="Android" width="32" height="32" />
+                        </div>
+                        <!-- Stats floating -->
+                        <div class="hero-stats-card glass-card">
+                            <div class="d-flex gap-4">
+                                <div class="text-center">
+                                    <span class="d-block fs-4 fw-700 text-primary">1.5+</span>
+                                    <span class="fs-7 text-muted">Years</span>
+                                </div>
+                                <div class="text-center">
+                                    <span class="d-block fs-4 fw-700 text-primary">15+</span>
+                                    <span class="fs-7 text-muted">Apps</span>
+                                </div>
+                                <div class="text-center">
+                                    <span class="d-block fs-4 fw-700 text-primary">4+</span>
+                                    <span class="fs-7 text-muted">Published</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================
+    ABOUT SECTION
+    ============================================================ -->
+    <section id="about" class="py-5 bg-light dark:bg-dark">
+        <div class="container py-5">
+            <div class="text-center mb-5" data-aos="fade-up">
+                <span class="badge bg-primary bg-opacity-10 text-primary rounded-pill px-4 py-2 fs-6 fw-600">About Me</span>
+                <h2 class="display-5 fw-700 text-dark dark:text-white mt-3">Know Me <span class="text-primary">Better</span></h2>
+                <div class="divider-primary mx-auto"></div>
+            </div>
+
+            <div class="row align-items-center g-5">
+                <div class="col-lg-5" data-aos="fade-right" data-aos-duration="800">
+                    <div class="about-image-wrapper position-relative">
+                        <img src="https://images.unsplash.com/photo-1576153192396-180ecef2a715?w=500&h=600&fit=crop&crop=center" alt="About Shaiyma" class="img-fluid rounded-4 shadow-lg" loading="lazy" />
+                        <div class="about-experience-card glass-card">
+                            <span class="d-block fs-1 fw-800 text-primary">1.5+</span>
+                            <span class="text-muted">Years of Experience</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-7" data-aos="fade-left" data-aos-duration="800" data-aos-delay="200">
+                    <h3 class="fw-700 text-dark dark:text-white">I'm Shaiyma Parveen</h3>
+                    <p class="text-primary fw-600 mb-3">Flutter Developer | Mobile App Developer</p>
+                    <p class="text-muted">
+                        I am a passionate Flutter Developer with 1.5+ years of experience in building cross-platform mobile applications. I love crafting clean, responsive, and performant apps with a focus on user experience and pixel-perfect design.
+                    </p>
+                    <p class="text-muted">
+                        My expertise lies in Flutter, Dart, Firebase, REST APIs, and state management. I am a quick learner and a team player who enjoys solving complex problems and delivering high-quality software.
+                    </p>
+
+                    <div class="row g-3 mt-3">
+                        <div class="col-sm-6">
+                            <div class="about-info-card glass-card p-3">
+                                <span class="text-muted fs-7">Name</span>
+                                <p class="fw-600 text-dark dark:text-white mb-0">Shaiyma Parveen</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="about-info-card glass-card p-3">
+                                <span class="text-muted fs-7">Email</span>
+                                <p class="fw-600 text-dark dark:text-white mb-0">shaiyma@example.com</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="about-info-card glass-card p-3">
+                                <span class="text-muted fs-7">Location</span>
+                                <p class="fw-600 text-dark dark:text-white mb-0">Varanasi, India</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="about-info-card glass-card p-3">
+                                <span class="text-muted fs-7">Experience</span>
+                                <p class="fw-600 text-dark dark:text-white mb-0">1.5+ Years</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mt-4">
+                        <a href="#contact" class="btn btn-primary rounded-pill px-5">
+                            <i class="bi bi-chat me-2"></i>Let's Talk
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================
+    SKILLS SECTION
+    ============================================================ -->
+    <section id="skills" class="py-5 dark:bg-dark-alt">
+        <div class="container py-5">
+            <div class="text-center mb-5" data-aos="fade-up">
+                <span class="badge bg-primary bg-opacity-10 text-primary rounded-pill px-4 py-2 fs-6 fw-600">My Skills</span>
+                <h2 class="display-5 fw-700 text-dark dark:text-white mt-3">Technical <span class="text-primary">Expertise</span></h2>
+                <div class="divider-primary mx-auto"></div>
+            </div>
+
+            <div class="row g-4">
+                <!-- Skill items with progress bars -->
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-duration="600">
+                    <div class="skill-card glass-card p-4 h-100">
+                        <div class="d-flex align-items-center gap-3 mb-3">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flutter/flutter-original.svg" alt="Flutter" width="40" height="40" />
+                            <span class="fw-600 text-dark dark:text-white">Flutter</span>
+                            <span class="ms-auto fw-700 text-primary">95%</span>
+                        </div>
+                        <div class="progress skill-progress">
+                            <div class="progress-bar" role="progressbar" style="width:0%;" data-width="95" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-duration="600" data-aos-delay="100">
+                    <div class="skill-card glass-card p-4 h-100">
+                        <div class="d-flex align-items-center gap-3 mb-3">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dart/dart-original.svg" alt="Dart" width="40" height="40" />
+                            <span class="fw-600 text-dark dark:text-white">Dart</span>
+                            <span class="ms-auto fw-700 text-primary">90%</span>
+                        </div>
+                        <div class="progress skill-progress">
+                            <div class="progress-bar" role="progressbar" style="width:0%;" data-width="90" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-duration="600" data-aos-delay="200">
+                    <div class="skill-card glass-card p-4 h-100">
+                        <div class="d-flex align-items-center gap-3 mb-3">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg" alt="Firebase" width="40" height="40" />
+                            <span class="fw-600 text-dark dark:text-white">Firebase</span>
+                            <span class="ms-auto fw-700 text-primary">85%</span>
+                        </div>
+                        <div class="progress skill-progress">
+                            <div class="progress-bar" role="progressbar" style="width:0%;" data-width="85" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-duration="600" data-aos-delay="300">
+                    <div class="skill-card glass-card p-4 h-100">
+                        <div class="d-flex align-items-center gap-3 mb-3">
+                            <i class="bi bi-link-45deg fs-2 text-primary"></i>
+                            <span class="fw-600 text-dark dark:text-white">REST API</span>
+                            <span class="ms-auto fw-700 text-primary">88%</span>
+                        </div>
+                        <div class="progress skill-progress">
+                            <div class="progress-bar" role="progressbar" style="width:0%;" data-width="88" aria-valuenow="88" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-duration="600" data-aos-delay="400">
+                    <div class="skill-card glass-card p-4 h-100">
+                        <div class="d-flex align-items-center gap-3 mb-3">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git" width="40" height="40" />
+                            <span class="fw-600 text-dark dark:text-white">Git</span>
+                            <span class="ms-auto fw-700 text-primary">80%</span>
+                        </div>
+                        <div class="progress skill-progress">
+                            <div class="progress-bar" role="progressbar" style="width:0%;" data-width="80" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-duration="600" data-aos-delay="500">
+                    <div class="skill-card glass-card p-4 h-100">
+                        <div class="d-flex align-items-center gap-3 mb-3">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/androidstudio/androidstudio-original.svg" alt="Android Studio" width="40" height="40" />
+                            <span class="fw-600 text-dark dark:text-white">Android Studio</span>
+                            <span class="ms-auto fw-700 text-primary">90%</span>
+                        </div>
+                        <div class="progress skill-progress">
+                            <div class="progress-bar" role="progressbar" style="width:0%;" data-width="90" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-duration="600" data-aos-delay="600">
+                    <div class="skill-card glass-card p-4 h-100">
+                        <div class="d-flex align-items-center gap-3 mb-3">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" alt="VS Code" width="40" height="40" />
+                            <span class="fw-600 text-dark dark:text-white">VS Code</span>
+                            <span class="ms-auto fw-700 text-primary">85%</span>
+                        </div>
+                        <div class="progress skill-progress">
+                            <div class="progress-bar" role="progressbar" style="width:0%;" data-width="85" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-duration="600" data-aos-delay="700">
+                    <div class="skill-card glass-card p-4 h-100">
+                        <div class="d-flex align-items-center gap-3 mb-3">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" alt="Figma" width="40" height="40" />
+                            <span class="fw-600 text-dark dark:text-white">Figma</span>
+                            <span class="ms-auto fw-700 text-primary">75%</span>
+                        </div>
+                        <div class="progress skill-progress">
+                            <div class="progress-bar" role="progressbar" style="width:0%;" data-width="75" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-duration="600" data-aos-delay="800">
+                    <div class="skill-card glass-card p-4 h-100">
+                        <div class="d-flex align-items-center gap-3 mb-3">
+                            <i class="bi bi-github fs-2 text-primary"></i>
+                            <span class="fw-600 text-dark dark:text-white">GitHub</span>
+                            <span class="ms-auto fw-700 text-primary">85%</span>
+                        </div>
+                        <div class="progress skill-progress">
+                            <div class="progress-bar" role="progressbar" style="width:0%;" data-width="85" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================
+    EXPERIENCE SECTION
+    ============================================================ -->
+    <section id="experience" class="py-5 bg-light dark:bg-dark">
+        <div class="container py-5">
+            <div class="text-center mb-5" data-aos="fade-up">
+                <span class="badge bg-primary bg-opacity-10 text-primary rounded-pill px-4 py-2 fs-6 fw-600">Experience</span>
+                <h2 class="display-5 fw-700 text-dark dark:text-white mt-3">Work <span class="text-primary">Journey</span></h2>
+                <div class="divider-primary mx-auto"></div>
+            </div>
+
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <!-- Timeline -->
+                    <div class="timeline">
+                        <div class="timeline-item" data-aos="fade-up" data-aos-duration="600">
+                            <div class="timeline-badge"><i class="bi bi-briefcase"></i></div>
+                            <div class="timeline-content glass-card p-4">
+                                <div class="d-flex flex-wrap justify-content-between align-items-start mb-2">
+                                    <h4 class="fw-700 text-dark dark:text-white mb-0">Flutter Developer</h4>
+                                    <span class="badge bg-primary rounded-pill px-3 py-2">July 2024 – Present</span>
+                                </div>
+                                <p class="text-primary fw-600 mb-2">Cobra Online Services Pvt Ltd</p>
+                                <ul class="text-muted ps-3 mb-0">
+                                    <li>Developed Flutter applications with responsive UI &amp; smooth navigation</li>
+                                    <li>Implemented authentication flows and state management</li>
+                                    <li>Built reusable widgets and integrated REST APIs</li>
+                                    <li>Optimized app performance and memory usage</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Add more experience items as needed -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================
+    EDUCATION SECTION
+    ============================================================ -->
+    <section id="education" class="py-5 dark:bg-dark-alt">
+        <div class="container py-5">
+            <div class="text-center mb-5" data-aos="fade-up">
+                <span class="badge bg-primary bg-opacity-10 text-primary rounded-pill px-4 py-2 fs-6 fw-600">Education</span>
+                <h2 class="display-5 fw-700 text-dark dark:text-white mt-3">My <span class="text-primary">Education</span></h2>
+                <div class="divider-primary mx-auto"></div>
+            </div>
+
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="timeline">
+                        <div class="timeline-item" data-aos="fade-up" data-aos-duration="600">
+                            <div class="timeline-badge"><i class="bi bi-mortarboard"></i></div>
+                            <div class="timeline-content glass-card p-4">
+                                <div class="d-flex flex-wrap justify-content-between align-items-start mb-2">
+                                    <h4 class="fw-700 text-dark dark:text-white mb-0">MCA</h4>
+                                    <span class="badge bg-primary rounded-pill px-3 py-2">2024</span>
+                                </div>
+                                <p class="text-muted mb-0">Kashi IT, Mirzamurad, Varanasi</p>
+                            </div>
+                        </div>
+
+                        <div class="timeline-item" data-aos="fade-up" data-aos-duration="600" data-aos-delay="150">
+                            <div class="timeline-badge"><i class="bi bi-mortarboard"></i></div>
+                            <div class="timeline-content glass-card p-4">
+                                <div class="d-flex flex-wrap justify-content-between align-items-start mb-2">
+                                    <h4 class="fw-700 text-dark dark:text-white mb-0">B.Sc</h4>
+                                    <span class="badge bg-primary rounded-pill px-3 py-2">2022</span>
+                                </div>
+                                <p class="text-muted mb-0">K.B.P.G College, Mirzapur</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================
+    SERVICES SECTION
+    ============================================================ -->
+    <section id="services" class="py-5 bg-light dark:bg-dark">
+        <div class="container py-5">
+            <div class="text-center mb-5" data-aos="fade-up">
+                <span class="badge bg-primary bg-opacity-10 text-primary rounded-pill px-4 py-2 fs-6 fw-600">Services</span>
+                <h2 class="display-5 fw-700 text-dark dark:text-white mt-3">What I <span class="text-primary">Offer</span></h2>
+                <div class="divider-primary mx-auto"></div>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6" data-aos="flip-up" data-aos-duration="600">
+                    <div class="service-card glass-card p-4 text-center h-100">
+                        <div class="service-icon"><i class="bi bi-phone"></i></div>
+                        <h4 class="fw-700 text-dark dark:text-white mt-3">Flutter Development</h4>
+                        <p class="text-muted">Cross-platform apps with native performance and beautiful UI.</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6" data-aos="flip-up" data-aos-duration="600" data-aos-delay="100">
+                    <div class="service-card glass-card p-4 text-center h-100">
+                        <div class="service-icon"><i class="bi bi-android2"></i></div>
+                        <h4 class="fw-700 text-dark dark:text-white mt-3">Android Development</h4>
+                        <p class="text-muted">Native Android apps with clean architecture and modern UX.</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6" data-aos="flip-up" data-aos-duration="600" data-aos-delay="200">
+                    <div class="service-card glass-card p-4 text-center h-100">
+                        <div class="service-icon"><i class="bi bi-palette"></i></div>
+                        <h4 class="fw-700 text-dark dark:text-white mt-3">UI/UX Design</h4>
+                        <p class="text-muted">Pixel-perfect, responsive designs that users love.</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6" data-aos="flip-up" data-aos-duration="600" data-aos-delay="300">
+                    <div class="service-card glass-card p-4 text-center h-100">
+                        <div class="service-icon"><i class="bi bi-fire"></i></div>
+                        <h4 class="fw-700 text-dark dark:text-white mt-3">Firebase Integration</h4>
+                        <p class="text-muted">Auth, Firestore, Push Notifications, and Cloud Functions.</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6" data-aos="flip-up" data-aos-duration="600" data-aos-delay="400">
+                    <div class="service-card glass-card p-4 text-center h-100">
+                        <div class="service-icon"><i class="bi bi-link-45deg"></i></div>
+                        <h4 class="fw-700 text-dark dark:text-white mt-3">API Integration</h4>
+                        <p class="text-muted">Seamless REST API integration with error handling &amp; caching.</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6" data-aos="flip-up" data-aos-duration="600" data-aos-delay="500">
+                    <div class="service-card glass-card p-4 text-center h-100">
+                        <div class="service-icon"><i class="bi bi-shield-check"></i></div>
+                        <h4 class="fw-700 text-dark dark:text-white mt-3">Maintenance &amp; Support</h4>
+                        <p class="text-muted">Ongoing support, updates, and performance optimization.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================
+    PORTFOLIO SECTION
+    ============================================================ -->
+    <section id="portfolio" class="py-5 dark:bg-dark-alt">
+        <div class="container py-5">
+            <div class="text-center mb-5" data-aos="fade-up">
+                <span class="badge bg-primary bg-opacity-10 text-primary rounded-pill px-4 py-2 fs-6 fw-600">Portfolio</span>
+                <h2 class="display-5 fw-700 text-dark dark:text-white mt-3">Featured <span class="text-primary">Projects</span></h2>
+                <div class="divider-primary mx-auto"></div>
+            </div>
+
+            <!-- Filter Buttons -->
+            <div class="d-flex flex-wrap justify-content-center gap-2 mb-5" data-aos="fade-up">
+                <button class="btn btn-outline-primary rounded-pill px-4 filter-btn active" data-filter="all">All</button>
+                <button class="btn btn-outline-primary rounded-pill px-4 filter-btn" data-filter="flutter">Flutter</button>
+                <button class="btn btn-outline-primary rounded-pill px-4 filter-btn" data-filter="android">Android</button>
+                <button class="btn btn-outline-primary rounded-pill px-4 filter-btn" data-filter="ui">UI/UX</button>
+            </div>
+
+            <div class="row g-4" id="portfolio-grid">
+                <!-- Project 1 -->
+                <div class="col-lg-6 col-md-6 portfolio-item" data-category="flutter" data-aos="fade-up" data-aos-duration="600">
+                    <div class="portfolio-card glass-card overflow-hidden">
+                        <div class="portfolio-image-wrapper position-relative">
+                            <img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=600&h=400&fit=crop" alt="SkinIQ" class="img-fluid w-100" loading="lazy" />
+                            <div class="portfolio-overlay">
+                                <div class="d-flex gap-3">
+                                    <a href="#" class="btn btn-light rounded-circle p-3"><i class="bi bi-github fs-5"></i></a>
+                                    <a href="#" class="btn btn-light rounded-circle p-3"><i class="bi bi-box-arrow-up-right fs-5"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-4">
+                            <h5 class="fw-700 text-dark dark:text-white">SkinIQ – AI Skin Scanner</h5>
+                            <p class="text-muted small">AI-powered skin analysis and recommendation app.</p>
+                            <div class="d-flex flex-wrap gap-2 mt-2">
+                                <span class="badge bg-primary bg-opacity-10 text-primary">Flutter</span>
+                                <span class="badge bg-primary bg-opacity-10 text-primary">Firebase</span>
+                                <span class="badge bg-primary bg-opacity-10 text-primary">REST API</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="col-lg-6 col-md-6 portfolio-item" data-category="flutter" data-aos="fade-up" data-aos-duration="600" data-aos-delay="150">
+                    <div class="portfolio-card glass-card overflow-hidden">
+                        <div class="portfolio-image-wrapper position-relative">
+                            <img src="https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?w=600&h=400&fit=crop" alt="Textify" class="img-fluid w-100" loading="lazy" />
+                            <div class="portfolio-overlay">
+                                <div class="d-flex gap-3">
+                                    <a href="#" class="btn btn-light rounded-circle p-3"><i class="bi bi-github fs-5"></i></a>
+                                    <a href="#" class="btn btn-light rounded-circle p-3"><i class="bi bi-box-arrow-up-right fs-5"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-4">
+                            <h5 class="fw-700 text-dark dark:text-white">Textify – Fancy Text Maker</h5>
+                            <p class="text-muted small">Create stylish text for social media with one tap.</p>
+                            <div class="d-flex flex-wrap gap-2 mt-2">
+                                <span class="badge bg-primary bg-opacity-10 text-primary">Flutter</span>
+                                <span class="badge bg-primary bg-opacity-10 text-primary">Dart</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="col-lg-6 col-md-6 portfolio-item" data-category="android" data-aos="fade-up" data-aos-duration="600" data-aos-delay="300">
+                    <div class="portfolio-card glass-card overflow-hidden">
+                        <div class="portfolio-image-wrapper position-relative">
+                            <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=600&h=400&fit=crop" alt="Ultra VPN" class="img-fluid w-100" loading="lazy" />
+                            <div class="portfolio-overlay">
+                                <div class="d-flex gap-3">
+                                    <a href="#" class="btn btn-light rounded-circle p-3"><i class="bi bi-github fs-5"></i></a>
+                                    <a href="#" class="btn btn-light rounded-circle p-3"><i class="bi bi-box-arrow-up-right fs-5"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-4">
+                            <h5 class="fw-700 text-dark dark:text-white">Ultra VPN</h5>
+                            <p class="text-muted small">Fast &amp; secure VPN app with global servers.</p>
+                            <div class="d-flex flex-wrap gap-2 mt-2">
+                                <span class="badge bg-primary bg-opacity-10 text-primary">Android</span>
+                                <span class="badge bg-primary bg-opacity-10 text-primary">Java</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="col-lg-6 col-md-6 portfolio-item" data-category="ui" data-aos="fade-up" data-aos-duration="600" data-aos-delay="450">
+                    <div class="portfolio-card glass-card overflow-hidden">
+                        <div class="portfolio-image-wrapper position-relative">
+                            <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=600&h=400&fit=crop" alt="Hacking Course" class="img-fluid w-100" loading="lazy" />
+                            <div class="portfolio-overlay">
+                                <div class="d-flex gap-3">
+                                    <a href="#" class="btn btn-light rounded-circle p-3"><i class="bi bi-github fs-5"></i></a>
+                                    <a href="#" class="btn btn-light rounded-circle p-3"><i class="bi bi-box-arrow-up-right fs-5"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-4">
+                            <h5 class="fw-700 text-dark dark:text-white">Learn Ethical Hacking</h5>
+                            <p class="text-muted small">Interactive courses on cybersecurity fundamentals.</p>
+                            <div class="d-flex flex-wrap gap-2 mt-2">
+                                <span class="badge bg-primary bg-opacity-10 text-primary">UI/UX</span>
+                                <span class="badge bg-primary bg-opacity-10 text-primary">Flutter</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================
+    ACHIEVEMENTS SECTION
+    ============================================================ -->
+    <section id="achievements" class="py-5 bg-light dark:bg-dark">
+        <div class="container py-5">
+            <div class="text-center mb-5" data-aos="fade-up">
+                <span class="badge bg-primary bg-opacity-10 text-primary rounded-pill px-4 py-2 fs-6 fw-600">Achievements</span>
+                <h2 class="display-5 fw-700 text-dark dark:text-white mt-3">Numbers <span class="text-primary">Speak</span></h2>
+                <div class="divider-primary mx-auto"></div>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-lg-3 col-md-6" data-aos="flip-up" data-aos-duration="600">
+                    <div class="achievement-card glass-card p-4 text-center">
+                        <span class="counter display-3 fw-800 text-primary" data-target="15">0</span>
+                        <span class="display-5 fw-700 text-primary">+</span>
+                        <p class="text-muted fw-600 mt-2">Apps Developed</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6" data-aos="flip-up" data-aos-duration="600" data-aos-delay="100">
+                    <div class="achievement-card glass-card p-4 text-center">
+                        <span class="counter display-3 fw-800 text-primary" data-target="1.5">0</span>
+                        <span class="display-5 fw-700 text-primary">+</span>
+                        <p class="text-muted fw-600 mt-2">Years Experience</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6" data-aos="flip-up" data-aos-duration="600" data-aos-delay="200">
+                    <div class="achievement-card glass-card p-4 text-center">
+                        <span class="counter display-3 fw-800 text-primary" data-target="4">0</span>
+                        <span class="display-5 fw-700 text-primary">+</span>
+                        <p class="text-muted fw-600 mt-2">Published Apps</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6" data-aos="flip-up" data-aos-duration="600" data-aos-delay="300">
+                    <div class="achievement-card glass-card p-4 text-center">
+                        <span class="counter display-3 fw-800 text-primary" data-target="100">0</span>
+                        <span class="display-5 fw-700 text-primary">%</span>
+                        <p class="text-muted fw-600 mt-2">Client Satisfaction</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================
+    TESTIMONIALS SECTION
+    ============================================================ -->
+    <section id="testimonials" class="py-5 dark:bg-dark-alt">
+        <div class="container py-5">
+            <div class="text-center mb-5" data-aos="fade-up">
+                <span class="badge bg-primary bg-opacity-10 text-primary rounded-pill px-4 py-2 fs-6 fw-600">Testimonials</span>
+                <h2 class="display-5 fw-700 text-dark dark:text-white mt-3">What Clients <span class="text-primary">Say</span></h2>
+                <div class="divider-primary mx-auto"></div>
+            </div>
+
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="testimonial-card glass-card p-5 text-center">
+                                    <div class="mb-3">
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                    </div>
+                                    <p class="fs-5 fst-italic text-muted">"Shaiyma is an exceptional Flutter developer. She delivered our app ahead of schedule with pixel-perfect UI and smooth performance. Highly recommended!"</p>
+                                    <div class="d-flex align-items-center justify-content-center gap-3 mt-3">
+                                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=60&h=60&fit=crop&crop=center" alt="Client" class="rounded-circle" width="50" height="50" loading="lazy" />
+                                        <div class="text-start">
+                                            <h6 class="fw-700 text-dark dark:text-white mb-0">Rahul Kumar</h6>
+                                            <span class="text-muted small">CEO, TechStart</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="carousel-item">
+                                <div class="testimonial-card glass-card p-5 text-center">
+                                    <div class="mb-3">
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                    </div>
+                                    <p class="fs-5 fst-italic text-muted">"Working with Shaiyma was a pleasure. She has deep knowledge of Flutter and Firebase. She built a complex app with ease and provided excellent support."</p>
+                                    <div class="d-flex align-items-center justify-content-center gap-3 mt-3">
+                                        <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=60&h=60&fit=crop&crop=center" alt="Client" class="rounded-circle" width="50" height="50" loading="lazy" />
+                                        <div class="text-start">
+                                            <h6 class="fw-700 text-dark dark:text-white mb-0">Priya Singh</h6>
+                                            <span class="text-muted small">Product Manager, AppVibe</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="carousel-item">
+                                <div class="testimonial-card glass-card p-5 text-center">
+                                    <div class="mb-3">
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                    </div>
+                                    <p class="fs-5 fst-italic text-muted">"Shaiyma is a talented developer who truly cares about the user experience. Her attention to detail and commitment to quality are outstanding."</p>
+                                    <div class="d-flex align-items-center justify-content-center gap-3 mt-3">
+                                        <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=60&h=60&fit=crop&crop=center" alt="Client" class="rounded-circle" width="50" height="50" loading="lazy" />
+                                        <div class="text-start">
+                                            <h6 class="fw-700 text-dark dark:text-white mb-0">Amit Verma</h6>
+                                            <span class="text-muted small">CTO, InnovateHub</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon bg-primary rounded-circle p-3" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+                            <span class="carousel-control-next-icon bg-primary rounded-circle p-3" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================
+    CONTACT SECTION
+    ============================================================ -->
+    <section id="contact" class="py-5 bg-light dark:bg-dark">
+        <div class="container py-5">
+            <div class="text-center mb-5" data-aos="fade-up">
+                <span class="badge bg-primary bg-opacity-10 text-primary rounded-pill px-4 py-2 fs-6 fw-600">Contact</span>
+                <h2 class="display-5 fw-700 text-dark dark:text-white mt-3">Get In <span class="text-primary">Touch</span></h2>
+                <div class="divider-primary mx-auto"></div>
+            </div>
+
+            <div class="row g-5">
+                <div class="col-lg-5" data-aos="fade-right" data-aos-duration="800">
+                    <div class="glass-card p-4 h-100">
+                        <h4 class="fw-700 text-dark dark:text-white mb-3">Let's Connect</h4>
+                        <p class="text-muted">I'm always open to new opportunities and collaborations.</p>
+
+                        <div class="contact-info mt-4">
+                            <div class="d-flex align-items-start gap-3 mb-3">
+                                <div class="contact-icon"><i class="bi bi-phone"></i></div>
+                                <div>
+                                    <span class="d-block text-muted small">Phone</span>
+                                    <span class="fw-600 text-dark dark:text-white">+91 98765 43210</span>
+                                </div>
+                            </div>
+                            <div class="d-flex align-items-start gap-3 mb-3">
+                                <div class="contact-icon"><i class="bi bi-envelope"></i></div>
+                                <div>
+                                    <span class="d-block text-muted small">Email</span>
+                                    <span class="fw-600 text-dark dark:text-white">shaiyma@example.com</span>
+                                </div>
+                            </div>
+                            <div class="d-flex align-items-start gap-3">
+                                <div class="contact-icon"><i class="bi bi-geo-alt"></i></div>
+                                <div>
+                                    <span class="d-block text-muted small">Location</span>
+                                    <span class="fw-600 text-dark dark:text-white">Varanasi, India</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mt-4">
+                            <p class="text-muted small mb-2">Follow me</p>
+                            <div class="d-flex gap-3">
+                                <a href="#" class="btn btn-outline-primary rounded-circle p-3"><i class="bi bi-github fs-5"></i></a>
+                                <a href="#" class="btn btn-outline-primary rounded-circle p-3"><i class="bi bi-linkedin fs-5"></i></a>
+                                <a href="#" class="btn btn-outline-primary rounded-circle p-3"><i class="bi bi-twitter-x fs-5"></i></a>
+                                <a href="#" class="btn btn-outline-primary rounded-circle p-3"><i class="bi bi-youtube fs-5"></i></a>
+                            </div>
+                        </div>
+
+                        <!-- Google Map Placeholder -->
+                        <div class="mt-4">
+                            <div class="rounded-3 overflow-hidden" style="height:180px;background:#e9ecef;">
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28895.38976976068!2d82.97311795!3d25.31764565!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x398e2d9b0f2b5d3f%3A0x8f7c9e4b3a2c1d6e!2sVaranasi%2C%20Uttar%20Pradesh%2C%20India!5e0!3m2!1sen!2sus!4v1700000000000" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-7" data-aos="fade-left" data-aos-duration="800" data-aos-delay="200">
+                    <div class="glass-card p-4">
+                        <form id="contactForm" novalidate>
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <label for="contactName" class="form-label fw-600">Your Name</label>
+                                    <input type="text" class="form-control form-control-lg" id="contactName" placeholder="John Doe" required />
+                                    <div class="invalid-feedback">Please enter your name.</div>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="contactEmail" class="form-label fw-600">Email Address</label>
+                                    <input type="email" class="form-control form-control-lg" id="contactEmail" placeholder="john@example.com" required />
+                                    <div class="invalid-feedback">Please enter a valid email.</div>
+                                </div>
+                                <div class="col-12">
+                                    <label for="contactSubject" class="form-label fw-600">Subject</label>
+                                    <input type="text" class="form-control form-control-lg" id="contactSubject" placeholder="Project Inquiry" />
+                                </div>
+                                <div class="col-12">
+                                    <label for="contactMessage" class="form-label fw-600">Message</label>
+                                    <textarea class="form-control form-control-lg" id="contactMessage" rows="5" placeholder="Tell me about your project..." required></textarea>
+                                    <div class="invalid-feedback">Please enter your message.</div>
+                                </div>
+                                <div class="col-12">
+                                    <button type="submit" class="btn btn-primary btn-lg rounded-pill px-5 w-100 w-md-auto">
+                                        <i class="bi bi-send me-2"></i>Send Message
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================
+    FOOTER
+    ============================================================ -->
+    <footer class="footer dark:bg-dark-alt py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <a class="navbar-brand fw-800 text-primary fs-3" href="#home">
+                        <span class="logo-text">SP</span>
+                        <span class="logo-full d-none d-sm-inline">Shaiyma</span>
+                    </a>
+                    <p class="text-muted mt-2">Flutter Developer crafting beautiful, high-performance mobile apps.</p>
+                    <div class="d-flex gap-3 mt-3">
+                        <a href="#" class="btn btn-outline-primary rounded-circle p-2"><i class="bi bi-github"></i></a>
+                        <a href="#" class="btn btn-outline-primary rounded-circle p-2"><i class="bi bi-linkedin"></i></a>
+                        <a href="#" class="btn btn-outline-primary rounded-circle p-2"><i class="bi bi-twitter-x"></i></a>
+                    </div>
+                </div>
+
+                <div class="col-lg-2 col-md-4">
+                    <h6 class="fw-700 text-dark dark:text-white">Quick Links</h6>
+                    <ul class="list-unstyled footer-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-2 col-md-4">
+                    <h6 class="fw-700 text-dark dark:text-white">Services</h6>
+                    <ul class="list-unstyled footer-links">
+                        <li><a href="#services">Flutter</a></li>
+                        <li><a href="#services">Android</a></li>
+                        <li><a href="#services">UI/UX</a></li>
+                        <li><a href="#services">Firebase</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-4 col-md-4">
+                    <h6 class="fw-700 text-dark dark:text-white">Contact</h6>
+                    <ul class="list-unstyled footer-links">
+                        <li><i class="bi bi-envelope me-2"></i>shaiyma@example.com</li>
+                        <li><i class="bi bi-phone me-2"></i>+91 98765 43210</li>
+                        <li><i class="bi bi-geo-alt me-2"></i>Varanasi, India</li>
+                    </ul>
+                </div>
+            </div>
+
+            <hr class="border-secondary border-opacity-25 my-4" />
+
+            <div class="d-flex flex-wrap justify-content-between align-items-center">
+                <p class="text-muted small mb-0">&copy; 2026 <span class="fw-600 text-dark dark:text-white">Shaiyma Parveen</span>. All rights reserved.</p>
+                <p class="text-muted small mb-0">Crafted with <i class="bi bi-heart-fill text-danger"></i> using Flutter &amp; Bootstrap</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ============================================================
+    SCRIPTS
+    ============================================================ -->
+
+    <!-- Bootstrap 5.3 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js">
+    </script>
+
+    <!-- AOS Animation -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js">
+    </script>
+
+    <!-- Typed.js -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12">
+    </script>
+
+    <!-- Swiper.js -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js">
+    </script>
+
+    <!-- Custom JS -->
+    <script src="script.js">
+    </script>
+
+</body>
+</html>
